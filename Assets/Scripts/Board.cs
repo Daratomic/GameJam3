@@ -10,12 +10,14 @@ public class Board : MonoBehaviour
     public GameObject tilePrefab;
     public GameObject[] gems;
     private BackgroundTile[,] allTiles;
+    public GameObject[,] allGems;
     
     // Start is called before the first frame update
     void Start()
     {
-        SetUp();
         allTiles = new BackgroundTile[width, height];
+        allGems = new GameObject[width, height];
+        SetUp();
     }
 
     private void SetUp()
@@ -32,6 +34,7 @@ public class Board : MonoBehaviour
                 GameObject gem = Instantiate(gems[gemToUse], transform.position, Quaternion.identity);
                 gem.transform.parent = this.transform;
                 gem.name = "( " + i + ", " + j + " )";
+                allGems[i, j] = gem;
             }
         }
     }
