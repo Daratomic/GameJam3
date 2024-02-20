@@ -9,11 +9,13 @@ public class Board : MonoBehaviour
     public int height;
     public GameObject tilePrefab;
     public GameObject[] gems;
+    private BackgroundTile[,] allTiles;
     
     // Start is called before the first frame update
     void Start()
     {
         SetUp();
+        allTiles = new BackgroundTile[width, height];
     }
 
     private void SetUp()
