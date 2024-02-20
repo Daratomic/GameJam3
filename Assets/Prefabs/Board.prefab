@@ -48,11 +48,11 @@ MonoBehaviour:
   height: 10
   tilePrefab: {fileID: 8042807157396935693, guid: 912b284c6e0d44e43be97784ac93bd8b, type: 3}
   gems:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4094581335244094423, guid: 9fe9ef056d1d6d2429dfb9099ababeab, type: 3}
+  - {fileID: 4094581335244094423, guid: dfd61ec519ee88b42a4a18b53055ca6b, type: 3}
+  - {fileID: 4094581335244094423, guid: 4e803863f74cb4f4b827542b27019a23, type: 3}
+  - {fileID: 4094581335244094423, guid: 870cd02e311bb524798ec8c1be030364, type: 3}
+  - {fileID: 4094581335244094423, guid: 549534731d48f4b489b74af8bf95e213, type: 3}
+  - {fileID: 4094581335244094423, guid: 5cb34da235748734b8b81c4b276da4b9, type: 3}
+  - {fileID: 4094581335244094423, guid: 546dfb0ca56e3804786ca4f19f138840, type: 3}
+  - {fileID: 4094581335244094423, guid: 24946155dda74b34f8c5b6b6ce2509f7, type: 3}
