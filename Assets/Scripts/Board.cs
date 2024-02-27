@@ -31,7 +31,7 @@ public class Board : MonoBehaviour
                 backgroundTile.transform.parent = this.transform;
                 backgroundTile.name = "( " + i + ", " + j + " )";
                 int gemToUse = Random.Range(0, gems.Length);
-                GameObject gem = Instantiate(gems[gemToUse], transform.position, Quaternion.identity);
+                GameObject gem = Instantiate(gems[gemToUse], tempPosition, Quaternion.identity);
                 gem.transform.parent = this.transform;
                 gem.name = "( " + i + ", " + j + " )";
                 allGems[i, j] = gem;

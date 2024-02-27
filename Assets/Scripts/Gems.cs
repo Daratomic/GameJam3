@@ -75,7 +75,7 @@ public class Gems : MonoBehaviour
     void CalculateAngle()
     {
         swipeAngle = Mathf.Atan2(finalTouchPosition.y - firstTouchPosition.y, finalTouchPosition.x - firstTouchPosition.x);
-        //Debug.Log(swipeAngle);
+        Debug.Log(swipeAngle);
         MovePieces();
     }
 
@@ -105,11 +105,11 @@ public class Gems : MonoBehaviour
             column -= 1;
         }
 
-        else if (swipeAngle > -45 && swipeAngle >= -135 && row > 0)
+        else if (swipeAngle < -45 && swipeAngle >= -135 && row > 0)
         {
             // Down swipe
             otherGem = board.allGems[column, row - 1];
-            otherGem.GetComponent<Gems>().row -= 1;
+            otherGem.GetComponent<Gems>().row += 1;
             row -= 1;
         }
     }
