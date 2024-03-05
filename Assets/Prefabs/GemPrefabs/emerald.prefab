@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7821722680105171188}
   - component: {fileID: 4050408156547682704}
   - component: {fileID: -4655358186762794592}
-  - component: {fileID: 6770536442302270916}
+  - component: {fileID: 747584020251393479}
   m_Layer: 0
   m_Name: emerald
   m_TagString: Untagged
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.024, y: 1.024}
   m_EdgeRadius: 0
---- !u!114 &6770536442302270916
+--- !u!114 &747584020251393479
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,7 +140,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 4094581335244094423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de82919df7244394ea62331972437ed7, type: 3}
+  m_Script: {fileID: 11500000, guid: 2cdeebb89471d469090d9f248fe9bd78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  column: 0
+  row: 0
+  previousColumn: 0
+  previousRow: 0
+  targetX: 0
+  targetY: 0
+  isMatched: 0
+  otherDot: {fileID: 0}
   swipeAngle: 0
+  swipeResist: 1
+  isColorBomb: 0
+  isColumnBomb: 0
+  isRowBomb: 0
+  isAdjacentBomb: 0
+  adjacentMarker: {fileID: 1746358072909436, guid: 2846699cebe8b4e93b485c0962edd52a, type: 3}
+  rowArrow: {fileID: 1775534601444322, guid: a10db065bdfa54e23bf91be31858fa5d, type: 3}
+  columnArrow: {fileID: 1629322208613970, guid: 36f4acc9beec24301a6fe1acfc05a567, type: 3}
+  colorBomb: {fileID: 1942758963516802, guid: 127ce63b5911c45abae4b1dde87e05da, type: 3}
