@@ -77,7 +77,7 @@ public class Board : MonoBehaviour {
 					{
 						dotToUse = Random.Range(0, dots.Length);
 						maxIterations++;
-						Debug.Log(maxIterations);
+						//Debug.Log(maxIterations);
 					}
 					maxIterations = 0;
 
@@ -86,6 +86,7 @@ public class Board : MonoBehaviour {
 					dot.GetComponent<Dot>().column = i;
 					dot.transform.parent = this.transform;
 					dot.name = "( " + i + ", " + j + " )";
+                    Debug.Log(dot.name);
 					allDots[i, j] = dot;
 				}
 			}
